@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scholarly — Scholarship Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header navigation bar: always visible, no collapse/hide behavior -->
+  <header class="topnav" id="topnav">
+    <div class="topnav-brand">
+      <span class="sidebar-mark">SR</span>
+      <div class="sidebar-title-group">
+        <p class="sidebar-title">Scholarly</p>
+        <p class="sidebar-subtitle">Research database</p>
+      </div>
+    </div>
+
+    <nav class="topnav-nav" id="nav">
+      <button class="nav-item is-active" data-view="dashboard">
+        <span class="nav-label">Dashboard</span>
+      </button>
+      <button class="nav-item" data-view="regions">
+        <span class="nav-label">Regions</span>
+      </button>
+      <button class="nav-item" data-view="countries">
+        <span class="nav-label">Countries</span>
+      </button>
+      <button class="nav-item" data-view="universities">
+        <span class="nav-label">Universities</span>
+      </button>
+      <button class="nav-item" data-view="programmes">
+        <span class="nav-label">Programmes</span>
+      </button>
+      <button class="nav-item" data-view="scholarships">
+        <span class="nav-label">Scholarships</span>
+      </button>
+      <button class="nav-item" data-view="applications">
+        <span class="nav-label">Applications</span>
+      </button>
+      <button class="nav-item" data-view="notes">
+        <span class="nav-label">Research Notes</span>
+      </button>
+      <button class="nav-item" data-view="calendar">
+        <span class="nav-label">Calendar</span>
+      </button>
+      <button class="nav-item" data-view="settings">
+        <span class="nav-label">Settings</span>
+      </button>
+    </nav>
+
+    <div class="topnav-actions">
+      <button class="btn btn-primary sidebar-quickadd-btn" id="sidebarQuickAdd" type="button">
+        <span aria-hidden="true">+</span><span class="sidebar-quickadd-btn-label">Quick Add</span>
+      </button>
+      <div class="sidebar-profile-card">
+        <span class="sidebar-profile-dot" aria-hidden="true"></span>
+        <div class="sidebar-title-group">
+          <p class="sidebar-profile-title">Local &amp; private</p>
+          <p class="sidebar-profile-sub">Nothing leaves this browser</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <header class="view-header">
+      <div>
+        <h1 id="viewTitle">Dashboard</h1>
+        <p id="viewSubtitle" class="view-subtitle">An overview of everything you've documented so far.</p>
+      </div>
+      <div class="global-search">
+        <input type="search" id="globalSearch" placeholder="Search everything…" aria-label="Search everything">
+      </div>
+    </header>
+
+    <div class="view-body" id="viewBody">
+      <!-- Views are rendered here by js/app.js -->
+    </div>
+  </main>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
